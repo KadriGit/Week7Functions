@@ -1,13 +1,17 @@
 ﻿string hello = "Hello, world";
-
 string panic = "Don't panic";
 
-for (int i = 0; i < 5; i++)
+
+PrintStringFiveTimes(hello);
+PrintStringFiveTimes(panic);
+PrintStringFiveTimes("Kadri");
+
+
+static void PrintStringFiveTimes(string someString)
 {
-    Console.WriteLine(hello);
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine(someString);
+    }
 }
 
-for (int i = 0;i < 5; i++)
-{
-    Console.WriteLine(panic);
-}
